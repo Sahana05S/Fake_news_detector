@@ -3,8 +3,8 @@ from flask_cors import CORS
 import joblib
 
 # Load both models
-isot_model = joblib.load("Fake_news_detector/model/isot_model.pkl")
-liar_model = joblib.load("Fake_news_detector/model/liar_model.pkl")
+isot_model = joblib.load("model/isot_model.pkl")
+liar_model = joblib.load("model/liar_model.pkl")
 
 # Initialize Flask app
 app = Flask(__name__)
